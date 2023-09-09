@@ -1,6 +1,6 @@
 {
   "name": "@jumpstudios/number-util",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "A wide range of utility functions for handling and manipulating numbers, simplifying mathematical operations and providing additional numerical functionality.",
   "main": "./out/init.lua",
   "keywords": [
