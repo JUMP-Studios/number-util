@@ -28,7 +28,7 @@ const Base16 = {
 			.sub(1, length)
 			.upper();
 
-		if (object?.[random] !== undefined) {
+		if ((object as Record<string, unknown>)?.[random] !== undefined) {
 			random = Base16.random(length, object)!;
 		}
 

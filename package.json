@@ -1,6 +1,6 @@
 {
   "name": "@jumpstudios/number-util",
-  "version": "1.2.5",
+  "version": "1.2.3",
   "description": "A wide range of utility functions for handling and manipulating numbers, simplifying mathematical operations and providing additional numerical functionality.",
   "main": "./out/init.lua",
   "keywords": [
@@ -46,6 +46,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@rbxts/services": "^1.5.1"
+    "@rbxts/services": "^1.5.1",
+    "roblox-ts": "^2.1.1"
   }
 }
