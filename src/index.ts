@@ -1,6 +1,9 @@
+import Base16 from "./base16";
+import Int from "./int";
+
 const Number = {
-	Base16: import("./base16").expect(),
-	Int: import("./int").expect(),
+	Base16,
+	Int,
 };
 
 export = Number;

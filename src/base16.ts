@@ -21,14 +21,16 @@ const Base16 = {
 			return string.format("%02X", c.byte()[0]);
 		})[0];
 	},
-	random: (length: number, object: Record<string, unknown>): string => {
+	random: (length: number, object?: Record<string, unknown> | Map<string, unknown>): string => {
 		if (length % 2 !== 0) throw "Cannot pass an odd length string";
 
 		let random = (string.gsub(HttpService.GenerateGUID(false), "-", "") as unknown as string)
 			.sub(1, length)
 			.upper();
 
-		if (object?.[random] !== undefined) random = Base16.random(length, object)!;
+		if (object?.[random] !== undefined) {
+			random = Base16.random(length, object)!;
+		}
 
 		return random;
 	},
